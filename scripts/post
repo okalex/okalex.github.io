@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+unless ARGV[0]
+  puts 'Usage: newpost "the post title"'
+  exit(-1)
+end
+title = ARGV[0]
+
+cur_time = Time.now
+date = cur_time.strftime("%Y-%m-%d")
+time = cur_time.strftime("%H:%M:%S")
+slug = ARGV[0].strip.downcase.gsub(/ /, '-').gsub(/[^\w-]/, '')
+jekyll_dir = File.expand_path("..", File.dirname(__FILE__))
+post = "#{jekyll_dir}/_posts/#{date}-#{slug}.md"
+
+header = <<-END
+---
+layout: post
+title: "#{title}"
+date: #{date} #{time}
+categories:
+---
+
+END
+
+File.open(post, 'w') do |f|
+  f << header
+end
+
+system("atom", post)

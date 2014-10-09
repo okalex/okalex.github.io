@@ -1,0 +1,15 @@
+# Site settings
+title: okalex
+email: okalex@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  The programming explorations of @okalex
+baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: /articles/:title
+url: "https://okalex.github.io" # the base hostname & protocol for your site
+twitter_username: okalex
+github_username:  okalex
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+exclude: ["scripts/"]
