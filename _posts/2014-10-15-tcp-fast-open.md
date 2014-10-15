@@ -12,6 +12,10 @@ eliminate one round trip time (RTT) from the three-way handshake process
 used during TCP connection establishment. To understand how it works, we'll
 first discuss how connections are established during a normal TCP handshake.
 
+In the following article, I give a very basic overview of how TCP Fast Open
+works, but if you want to know more, you can read the original paper
+[here](http://conferences.sigcomm.org/co-next/2011/papers/1569470463.pdf).
+
 ## Establishing a connection with TCP
 
 To open a TCP connection requires a three-way handshake initiated by the
