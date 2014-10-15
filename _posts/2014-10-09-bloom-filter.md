@@ -2,7 +2,7 @@
 layout: post
 title: "Bloom Filter"
 date: 2014-10-09 10:18:34
-categories: data-structures
+categories: study-notes data-structures
 ---
 
 ## Overview
