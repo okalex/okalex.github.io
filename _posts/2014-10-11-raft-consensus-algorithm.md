@@ -3,7 +3,7 @@ layout: post
 title: "Raft Consensus Algorithm"
 date: 2014-10-11 10:19:53
 categories: study-notes algorithms
-published: false
+published: true
 ---
 
 ## Overview
